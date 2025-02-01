@@ -1,20 +1,46 @@
 //
-// Name
-// Date
+// Name Tayson Wheeler
+// Date 2/1/2025
 // Restaurant Bill Programming Project
 // COSC 1030
 //
 
-// Variable declarations
+#include <iostream>
+#include <iomanip>
 
-// Constants for the tax rate and tip percentage
+using namespace std;
 
-// Get the amount of the purchase.
+int main(){
 
-// Calculate the sales tax.
+    // Variable declarations
+    float meal;
+    float tax;
+    float tip;
+    float total;
 
-// Calculate the tip.
+    // Constants for the tax rate and tip percentage
+    float taxRate = 0.0675;
+    float tipRate = 0.2;
 
-// Calculate the total of the sale.
+    // Get the amount of the purchase.
+    cout << "Enter the amount of the purchase, then press enter: " << endl;
+    cin >> meal;
 
-// Print information about the sale.
+    // Calculate the sales tax.
+    tax = meal * taxRate;
+
+    // Calculate the tip.
+    tip = meal * tipRate;
+
+    // Calculate the total of the sale.
+    total = meal + tax + tip;
+    
+    // Print information about the sale.
+    cout << fixed << setprecision(2);
+    cout << "Meal cost: $" << meal << endl;
+    cout << "Tax cost: $" << tax << endl;
+    cout << "Tip cost: $" << tip << endl;
+    cout << "Total: $" << total << endl;
+
+    return 0;
+}
