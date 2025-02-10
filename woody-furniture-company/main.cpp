@@ -10,17 +10,22 @@
 using namespace std;
 
 int main(){
-
+    //Variables
     double americanColonial;
     double modern;
     double frenchClassical;
 
+    //Getting information
     cout << "How many chairs of each type were sold? Put a space between all of them, then click enter. ";
     cin >> americanColonial >> modern >> frenchClassical;
+
+    // converting to dollars
     americanColonial *= 85;
     modern *= 57.5;
     frenchClassical *= 127.75;
     cout << fixed << setprecision(2);
+
+    //outputing information
     cout << "Total cost of all American Colonial chairs sold: $" << americanColonial << endl;
     cout << "Total cost of all Modern chairs sold: $" << modern << endl;
     cout << "Total cost of all French Classical chairs sold: $" << frenchClassical << endl;
