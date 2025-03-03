@@ -44,4 +44,3 @@ int main(){
     cout << "There was " << coffee + tea + coke + orangeJuice << " people surveyed, with " << coffee << " people who liked coffee, " << tea << " people who liked tea, " << coke << " people who like coke, and " << orangeJuice << " people who liked orange Juice." << endl; 
     return 0;
 }
-
